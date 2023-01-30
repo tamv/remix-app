@@ -16,6 +16,7 @@ model User {
   email String
   pwd Bytes 
   phone String
-
-  // Other fields
+  role String[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
